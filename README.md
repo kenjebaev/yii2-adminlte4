@@ -1,8 +1,6 @@
-hail812/yii2-adminlte3
+kenjebaev/yii2-adminlte4
 ======================
-adminlte3 for yii2
-
-![home](https://user-images.githubusercontent.com/3158261/80058324-8d751480-855b-11ea-87f5-3d682f787210.png)
+adminlte4 for yii2
 
 Installation
 ------------
@@ -12,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require "hail812/yii2-adminlte3=~1.1"
+composer require "kenjebaev/yii2-adminlte4"
 ```
 
 or add
 
 ```
-"hail812/yii2-adminlte3": "~1.1"
+"kenjebaev/yii2-adminlte4": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
@@ -34,24 +32,24 @@ Once the extension is installed, you can config the path mappings of the view co
     'view' => [
          'theme' => [
              'pathMap' => [
-                '@app/views' => '@vendor/hail812/yii2-adminlte3/src/views'
+                '@app/views' => '@vendor/kenjebaev/yii2-adminlte4/src/views'
              ],
          ],
     ],
 ],
 ```
 
-Copy files from @vendor/hail812/yii2-adminlte3/src/views to @app/views, then edit.
+Copy files from @vendor/kenjebaev/yii2-adminlte4/src/views to @app/views, then edit.
 
 simply use:
 
 ```php
-<?= \hail812\adminlte\widgets\Alert::widget([
+<?= \kenjebaev\adminlte\widgets\Alert::widget([
     'type' => 'success',
     'body' => '<h3>Congratulations!</h3>'
 ]) ?>
 ```
-more for [widgets](https://github.com/hail812/yii2-adminlte-widgets)
+more for [widgets](https://github.com/kenjebaev/yii2-adminlte-widgets)
 
 AdminLTE Plugins
 ----------------
@@ -61,10 +59,10 @@ For example:
 ```php
 /* @var $this \yii\web\View */
 
-\hail812\adminlte3\assets\PluginAsset::register($this)->add('sweetalert2');
+\kenjebaev\adminlte4\assets\PluginAsset::register($this)->add('sweetalert2');
 
 // or
-\hail812\adminlte3\assets\PluginAsset::register($this)->add(['sweetalert2', 'toastr']);
+\kenjebaev\adminlte4\assets\PluginAsset::register($this)->add(['sweetalert2', 'toastr']);
 ```
 
 before this, maybe you should edit params.php:
@@ -72,7 +70,7 @@ before this, maybe you should edit params.php:
 ```php
 return [
     'adminEmail' => 'admin@example.com',
-    'hail812/yii2-adminlte3' => [
+    'kenjebaev/yii2-adminlte4' => [
         'pluginMap' => [
             'sweetalert2' => [
                 'css' => 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css',
@@ -92,7 +90,7 @@ or
 ```php
 /* @var $this \yii\web\View */
 
-$bundle = \hail812\adminlte3\assets\PluginAsset::register($this);
+$bundle = \kenjebaev\adminlte4\assets\PluginAsset::register($this);
 $bundle->css[] = 'sweetalert2-theme-bootstrap-4/bootstrap-4.min.css';
 $bundle->js[] = 'sweetalert2/sweetalert2.min.js';
 ```
@@ -110,7 +108,7 @@ if (!YII_ENV_TEST) {
             'crud' => [ // generator name
                 'class' => 'yii\gii\generators\crud\Generator', // generator class
                 'templates' => [ // setting for our templates
-                    'yii2-adminlte3' => '@vendor/hail812/yii2-adminlte3/src/gii/generators/crud/default' // template name => path to template
+                    'yii2-adminlte4' => '@vendor/kenjebaev/yii2-adminlte4/src/gii/generators/crud/default' // template name => path to template
                 ]
             ]
         ]
