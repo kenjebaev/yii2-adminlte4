@@ -1,5 +1,5 @@
 <?php
-namespace hail812\adminlte3\assets;
+namespace kenjebaev\adminlte4\assets;
 
 use yii\web\AssetBundle;
 
@@ -16,7 +16,7 @@ class AdminLteAsset extends AssetBundle
     ];
 
     public $depends = [
-        'hail812\adminlte3\assets\BaseAsset',
-        'hail812\adminlte3\assets\PluginAsset'
+        'kenjebaev\adminlte4\assets\BaseAsset',
+        'kenjebaev\adminlte4\assets\PluginAsset'
     ];
 }
