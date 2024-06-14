@@ -13,7 +13,7 @@
     "require": {
         "php": ">=7.0",
         "yiisoft/yii2-bootstrap5": "2.0.4",
-        "almasaeed2010/adminlte": "~4.0.0-beta1",
+        "almasaeed2010/adminlte": "4.0.0-beta1",
         "cinghie/yii2-fontawesome": "^1.4.4",
         "hail812/yii2-adminlte-widgets": "~1.0.2"
     },
